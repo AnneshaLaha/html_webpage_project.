@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Store</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 1.8em;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+
+        /* Hero Section */
+        .hero {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #777;
+        }
+
+        .product-card .price {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .product-card button:hover {
+            background-color: #3498db;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .products {
+            grid-template-columns: repeat(2, 1fr);
+            }
+
+            header nav ul {
+            flex-direction: column;
+            align-items: center;
+            }
+
+            header nav ul li {
+            margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products {
+            grid-template-columns: 1fr;
+            }
+
+            header {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            header .logo h1 {
+            margin-bottom: 10px;
+            }
+
+            header nav ul {
+            flex-direction: column;
+            align-items: center;
+            }
+
+            header nav ul li {
+            margin: 5px 0;
+            }
+
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+           
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #3498db;
+        }
+            footer {
+                
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Aqua Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="shopping.html">Home</a></li>
+                <li><a href="Products">Products</a></li>
+                <li><a href="About">About Us</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Products Section -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\gold-fish-1.jpg" alt="Goldfish">
+            <h3> Orenda gold fish</h3>
+            <div class="price">₹20.00</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\fighter fish.jpg" alt="Fighter">
+            <h3>Red fighter fish</h3>
+            <div class="price">₹50.00</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\clownfish.jpg" alt="Clownfish">
+            <h3> Clownfish vibrant, high-contrast patterns of orange, red, yellow, or black bodies broken by distinctive vertical white bars or patches</h3>
+            <div class="price">₹299.00</div>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\apple snail.jpg" alt="Apple snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹38.00</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\Golden-yellow-Snail.jpg" alt="Golden yallow snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹38.00</div>
+            <button>Add to Cart</button>
+        </div>
+    <!-- Product 5 -->
+    <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\Assassin-Snail.jpg" alt="Assiassin snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹158.00</div>
+            <button>Add to Cart</button>
+        </div>
+    <!-- Product 6 -->
+    <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\Zebra-Snail.jpg" alt="Zebra snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹95.00</div>
+            <button>Add to Cart</button>
+        </div>
+    <!-- Product 7 -->
+    <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\Horn-Snail.jpg" alt="Horn snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹95.00</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="c:\Users\91990\OneDrive\Pictures\Magenta Mystery snail.jpg" alt="Magenta mystery snail">
+            <h3></h3>
+            <p></p>
+            <div class="price">₹1870.93</div>
+            <button>Add to Cart</button>
+            </div>
+        
+    <p style="padding: 10px; 
+       background-color:white;">
+    </p>
+</body>
+</html>
+        
